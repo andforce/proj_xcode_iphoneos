@@ -466,7 +466,7 @@
 				ENABLE_BITCODE = NO;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = build;
 				"VALID_ARCHS[sdk=iphoneos*]" = arm64;
@@ -486,7 +486,7 @@
 				EXECUTABLE_PREFIX = "";
 				EXECUTABLE_SUFFIX = "";
 				FRAMEWORK_SEARCH_PATHS = (
-					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/System/Library/Frameworks,
+					"$(PROJECT_DIR)",
 					"$(inherited)",
 				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -551,7 +551,7 @@
 				ENABLE_BITCODE = NO;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk;
+				SDKROOT = iphoneos;
 				SYMROOT = build;
 				"VALID_ARCHS[sdk=iphoneos*]" = arm64;
 			};
@@ -570,7 +570,7 @@
 				EXECUTABLE_PREFIX = "";
 				EXECUTABLE_SUFFIX = "";
 				FRAMEWORK_SEARCH_PATHS = (
-					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/System/Library/Frameworks,
+					"$(PROJECT_DIR)",
 					"$(inherited)",
 				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;

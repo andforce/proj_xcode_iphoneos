@@ -1,4 +1,0 @@
-dependencies: \
-  /Users/dy/Desktop/proj_xcode_iphoneos/Framework/src/Rendering/Metal/MetalShaders.metal \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/metal/ios/lib/clang/32023.157/include/metal/module.modulemap \
-  /Users/dy/Desktop/proj_xcode_iphoneos/Framework/src/Rendering/Metal/MetalShaderTypes.h

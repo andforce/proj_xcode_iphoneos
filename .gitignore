@@ -1,0 +1,5 @@
+build/*
+.DS_Store
+bin/*
+Demo.xcodeproj/project.xcworkspace/xcuserdata/dywang.xcuserdatad/
+Demo.xcodeproj/xcuserdata/dywang.xcuserdatad/
