@@ -225,14 +225,15 @@ using namespace LAppDefine;
     float x = width * 0.5f;
     float y = height * 0.5f;
     float fWidth = static_cast<float>(backgroundTexture->width * 2.0f);
-    float fHeight = static_cast<float>(height) * 0.95f;
+    float fHeight = static_cast<float>(height);// * 0.95f;
     _back = [[LAppSprite alloc] initWithMyVar:x Y:y Width:fWidth Height:fHeight MaxWidth:width MaxHeight:height Texture:backgroundTexture->id];
 
     //モデル変更ボタン
     imageName = GearImageName;
-    TextureInfo* gearTexture = [textureManager createTextureFromPngFile:resourcesPath+imageName];
+    TextureInfo* gearTexture = [textureManager createTextureFromPngFile:resourcesPath + imageName];
     x = static_cast<float>(width - gearTexture->width * 0.5f);
     y = static_cast<float>(height - gearTexture->height * 0.5f);
+    
     fWidth = static_cast<float>(gearTexture->width);
     fHeight = static_cast<float>(gearTexture->height);
     _gear = [[LAppSprite alloc] initWithMyVar:x Y:y Width:fWidth Height:fHeight MaxWidth:width MaxHeight:height Texture:gearTexture->id];
@@ -258,7 +259,7 @@ using namespace LAppDefine;
     float x = width * 0.5f;
     float y = height * 0.5f;
     float fWidth = static_cast<float>(_back.GetTextureId.width * 2.0f);
-    float fHeight = static_cast<float>(height) * 0.95f;
+    float fHeight = static_cast<float>(height);// * 0.95f;
     [_back resizeImmidiate:x Y:y Width:fWidth Height:fHeight MaxWidth:maxWidth MaxHeight:maxHeight];
 
     //モデル変更ボタン
