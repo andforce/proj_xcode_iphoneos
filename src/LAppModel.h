@@ -50,6 +50,10 @@ public:
      *
      */
     void Update();
+    
+    void updatePhysics(Csm::csmFloat32 deltaTimeSeconds);
+
+    void updateMouthOpenY(Csm::csmFloat32 value);
 
     /**
      * @brief   モデルを描画する処理。モデルを描画する空間のView-Projection行列を渡す。
@@ -189,6 +193,11 @@ private:
     const Csm::CubismId* _idParamBodyAngleX; ///< パラメータID: ParamBodyAngleX
     const Csm::CubismId* _idParamEyeBallX; ///< パラメータID: ParamEyeBallX
     const Csm::CubismId* _idParamEyeBallY; ///< パラメータID: ParamEyeBallXY
+    // add by andforce
+    const Csm::CubismId* _idParamMouthOpenY;    /// 口型Y，取值范围[0,1]
+    const Csm::CubismId* _idParamMouthA;        /// 口型Y，取值范围[0,1]
+    Csm::csmFloat32  _mouthOpenYValue = 0;
+    // end
 
     Live2D::Cubism::Framework::Rendering::CubismOffscreenSurface_Metal _renderBuffer;
 };

@@ -67,6 +67,9 @@ LAppModel::LAppModel()
     _idParamBodyAngleX = CubismFramework::GetIdManager()->GetId(ParamBodyAngleX);
     _idParamEyeBallX = CubismFramework::GetIdManager()->GetId(ParamEyeBallX);
     _idParamEyeBallY = CubismFramework::GetIdManager()->GetId(ParamEyeBallY);
+    // add by andforce
+    _idParamMouthOpenY = CubismFramework::GetIdManager()->GetId(ParamMouthOpenY);
+    // end
 }
 
 LAppModel::~LAppModel()
@@ -362,6 +365,18 @@ void LAppModel::ReleaseExpressions()
     _expressions.Clear();
 }
 
+void LAppModel::updatePhysics(csmFloat32 deltaTimeSeconds)
+{
+    if (_physics != NULL)
+    {
+        _physics->Evaluate(_model, deltaTimeSeconds);
+    }
+}
+
+void LAppModel::updateMouthOpenY(Csm::csmFloat32 value) {
+    _mouthOpenYValue = value;
+}
+
 void LAppModel::Update()
 {
     const csmFloat32 deltaTimeSeconds = LAppPal::GetDeltaTime();
@@ -418,6 +433,11 @@ void LAppModel::Update()
     //ドラッグによる目の向きの調整
     _model->AddParameterValue(_idParamEyeBallX, _dragX); // -1から1の値を加える
     _model->AddParameterValue(_idParamEyeBallY, _dragY);
+    
+    // add bu andforce
+    _model->AddParameterValue(_idParamMouthOpenY, _mouthOpenYValue);
+    _model->AddParameterValue(_idParamMouthA, _mouthOpenYValue);
+    // end
 
     // 呼吸など
     if (_breath != NULL)
