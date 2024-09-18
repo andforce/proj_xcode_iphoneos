@@ -468,7 +468,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = build;
 				"VALID_ARCHS[sdk=iphoneos*]" = arm64;
 			};
 			name = Release;
@@ -552,7 +551,6 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				SDKROOT = iphoneos;
-				SYMROOT = build;
 				"VALID_ARCHS[sdk=iphoneos*]" = arm64;
 			};
 			name = Debug;
