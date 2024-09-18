@@ -174,45 +174,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		385A072BBFF448AEAE15006E /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				DDBE56430F8941199DCADCF5 /* AppDelegate.mm */,
-				2DDB7B7716D440F8AB79028D /* LAppAllocator.mm */,
-				994B95CAC2F044BFA671F0E7 /* LAppDefine.mm */,
-				9682AFB16AA147758FFF76CD /* LAppLive2DManager.mm */,
-				76F759DD87C94BFABC09D486 /* LAppModel.mm */,
-				D6AFB9AA9D8B48D8AFAD5E62 /* LAppPal.mm */,
-				CA53830D591A46998B0058F2 /* LAppSprite.mm */,
-				7A03AE14A3EB4F7D9A053B86 /* LAppTextureManager.mm */,
-				DFC14C904958409790D5B0C4 /* MetalUIView.m */,
-				783F6016B5474DC0818FE1C5 /* MetalView.m */,
-				9765FCC7747B4A5FAE1C7F83 /* TouchManager.mm */,
-				A4ADDEC3E6DC42B69F171C47 /* ViewController.mm */,
-				5F2B9E8C4E0C4154BC9A16C0 /* main.m */,
-			);
-			name = "Source Files";
-			sourceTree = "<group>";
-		};
-		4F2B43D6E6024C5482F43672 /* Header Files */ = {
-			isa = PBXGroup;
-			children = (
-				E4B7EBDECCFD442998BA7361 /* AppDelegate.h */,
-				4B34EB68D1E540B5A87F14A1 /* LAppAllocator.h */,
-				00D5065116C249E197BF8799 /* LAppDefine.h */,
-				7EF7DA140DC749E48FB6FC1A /* LAppLive2DManager.h */,
-				DD1AA848D314473396A988EF /* LAppModel.h */,
-				5DE710A26236466D9548AD68 /* LAppPal.h */,
-				6A26EA8955D34EC98F6D6538 /* LAppSprite.h */,
-				93E7ABF18F4D42D7B860597E /* LAppTextureManager.h */,
-				8B8CCDB22DD8453289D78C3B /* MetalUIView.h */,
-				886037D5D7F34D16AC11CCDC /* MetalView.h */,
-				455E9D6A854249AF8445C16E /* TouchManager.h */,
-				CBAE4BECDF5E45CDA00EB452 /* ViewController.h */,
-			);
-			name = "Header Files";
-			sourceTree = "<group>";
-		};
 		58902D692839432B9E09CD88 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,9 +195,31 @@
 		616E6E6630044F4282CCECFD /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				4F2B43D6E6024C5482F43672 /* Header Files */,
-				385A072BBFF448AEAE15006E /* Source Files */,
-				BB1AA159639041729E10690E /* Resources */,
+				E4B7EBDECCFD442998BA7361 /* AppDelegate.h */,
+				DDBE56430F8941199DCADCF5 /* AppDelegate.mm */,
+				4B34EB68D1E540B5A87F14A1 /* LAppAllocator.h */,
+				2DDB7B7716D440F8AB79028D /* LAppAllocator.mm */,
+				00D5065116C249E197BF8799 /* LAppDefine.h */,
+				994B95CAC2F044BFA671F0E7 /* LAppDefine.mm */,
+				7EF7DA140DC749E48FB6FC1A /* LAppLive2DManager.h */,
+				9682AFB16AA147758FFF76CD /* LAppLive2DManager.mm */,
+				DD1AA848D314473396A988EF /* LAppModel.h */,
+				76F759DD87C94BFABC09D486 /* LAppModel.mm */,
+				5DE710A26236466D9548AD68 /* LAppPal.h */,
+				D6AFB9AA9D8B48D8AFAD5E62 /* LAppPal.mm */,
+				6A26EA8955D34EC98F6D6538 /* LAppSprite.h */,
+				CA53830D591A46998B0058F2 /* LAppSprite.mm */,
+				93E7ABF18F4D42D7B860597E /* LAppTextureManager.h */,
+				7A03AE14A3EB4F7D9A053B86 /* LAppTextureManager.mm */,
+				8B8CCDB22DD8453289D78C3B /* MetalUIView.h */,
+				DFC14C904958409790D5B0C4 /* MetalUIView.m */,
+				886037D5D7F34D16AC11CCDC /* MetalView.h */,
+				783F6016B5474DC0818FE1C5 /* MetalView.m */,
+				455E9D6A854249AF8445C16E /* TouchManager.h */,
+				9765FCC7747B4A5FAE1C7F83 /* TouchManager.mm */,
+				CBAE4BECDF5E45CDA00EB452 /* ViewController.h */,
+				A4ADDEC3E6DC42B69F171C47 /* ViewController.mm */,
+				5F2B9E8C4E0C4154BC9A16C0 /* main.m */,
 				935236A05B5147E0B1A2034A /* MetalShaders.metal */,
 				BE22C4C8458F4185BE88E2BA /* Resources */,
 			);
@@ -250,13 +233,6 @@
 				60B4DA2009EC426D9B8BD3BA /* Framework */,
 				58902D692839432B9E09CD88 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		BB1AA159639041729E10690E /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		C28A7CB6B4B94C4FB7D9796C /* Source Files */ = {
